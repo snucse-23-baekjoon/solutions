@@ -1,0 +1,5 @@
+N = int(input())
+P_i = list(map(int, input().split()))
+P_i.sort()
+ans = sum(map(lambda x: sum(P_i[:x + 1]), range(N)))
+print(ans)
